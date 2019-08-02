@@ -99,7 +99,6 @@ export default {
         },
         gotoPage(nextPage) {
             this.currentPage = nextPage
-            console.log('gotoPage', nextPage, this.currentPage)
         },
         pageList() {
             const list = getPageList(this.totalPages, this.currentPage + 1, 9)

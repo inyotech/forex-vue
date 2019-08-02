@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import * as api from '../store/api'
+import * as api from '../store/ratesapi'
 
 export default {
     computed: {

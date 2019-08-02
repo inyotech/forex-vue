@@ -1,47 +1,38 @@
 <template>
     <div>
-        <TargetRateList :currentRates="currentRates" />
-        <RateChart />
-        <BaseSelector />
-        <MonthsSelector />
-        <CSVDownloader />
-        <RateTable />
+        <div class="row" >
+          <div class="col-sm-12">
+            <Header />
+          </div>
+        </div>
+        <div class="row" >
+          <div class="col-sm-8">
+           <Rates />
+          </div>
+          <div class="col-sm-4">
+            <Stories />
+          </div>
+        </div>
+        <div class="row'" >
+          <div classe="col-sm-12" >
+            <Footer />
+          </div>
+        </div>
     </div>
 </template>
 
 <script>
-import TargetRateList from './targetratelist'
-import RateChart from './ratechart'
-import BaseSelector from './basecurrencyselector'
-import MonthsSelector from './monthsrangeselector'
-import CSVDownloader from './csvdownloader'
-import RateTable from './ratetable'
+import Header from './header'
+import Rates from './rates'
+import Stories from './stories'
+import Footer from './footer'
 
 export default {
     components: {
-        TargetRateList,
-        RateChart,
-        BaseSelector,
-        MonthsSelector,
-        CSVDownloader,
-        RateTable
-    },
-    computed: {
-        currencies: function() {
-            return this.$store.getters.currencies
-        },
-
-        currentRates: function() {
-            return this.$store.getters.currentRates
-        },
-
-        rateHistory: function() {
-            return this.$store.getters.rateHistory
-        }
-    },
-    data() {
-        return {
-        }
+        Header,
+        Rates,
+        Stories,
+        Footer,
     }
 }
 </script>

@@ -11,13 +11,16 @@
 import TargetRateListElement from './targetratelistelement'
 
 export default {
-    props: ['currentRates'],
     components: {
         TargetRateListElement
     },
+    computed: {
+        currentRates() {
+            return this.$store.getters.currentRates
+        }
+    },
     methods: {
         targetChanged(newTarget) {
-            console.log('targetChanged', newTarget)
             this.$store.dispatch('updateTarget', { targetCode: newTarget })
         }
     }
