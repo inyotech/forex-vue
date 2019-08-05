@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style >
+<style scoped>
 ul.target-currencies {
     list-style-type: none;
     column-width: 200px;

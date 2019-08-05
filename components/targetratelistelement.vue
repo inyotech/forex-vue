@@ -33,7 +33,7 @@ export default {
 }
 </script>
 
-<style >
+<style scoped>
 img {
     width: 20px;
     height: 15px;

@@ -27,7 +27,7 @@ let options = {
         display: false
     },
     responsive: true,
-    maintainAspectRatio: true
+    maintainAspectRatio: false
 }
 
 export default {
