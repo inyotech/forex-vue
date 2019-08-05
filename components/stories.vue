@@ -34,7 +34,6 @@ export default {
     mounted() {
         api.fetchStories(5)
             .then(data => {
-                console.log('data', data)
                 this.stories = data.data
             })
     }
