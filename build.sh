@@ -3,7 +3,7 @@
 docker build -t forex-vue .
 
 rm -rf dist
+mkdir dist
+chmod 755 dist
 
-CID=$(docker create forex-vue)
-docker cp ${CID}:/node/dist/. dist
-docker rm ${CID}
+docker run --rm -it -v $(pwd)/app:/node/app -v $(pwd)/dist:/node/dist forex-vue build
