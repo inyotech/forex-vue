@@ -6,7 +6,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 module.exports = {
     mode: 'development',
     entry: {
-        main: './src/main.js',
+        main: './app/src/main.js',
     },
     output: {
         filename: 'bundle.js',
@@ -16,8 +16,8 @@ module.exports = {
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: 'Foreign Exchange Rates',
-            favicon: './src/assets/images/favicon-32x32.png',
-            template: './index.html',
+            favicon: './app/src/assets/images/favicon-32x32.png',
+            template: './app/index.html',
             filename: 'index.html'
         }),
         new VueLoaderPlugin()
