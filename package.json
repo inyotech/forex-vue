@@ -4,7 +4,8 @@
   "description": "Display foreign exchange rates",
   "main": "index.js",
   "scripts": {
-    "build": "npx webpack"
+    "build": "npx webpack",
+    "clean": "rm -rf ./dist/*"
   },
   "author": "",
   "license": "ISC",
