@@ -5,7 +5,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const Dotenv = require('dotenv-webpack')
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: {
         main: './app/src/main.js',
     },
