@@ -45,7 +45,7 @@ module.exports = {
         }, {
             test: /\.gif$/,
             loader:'file-loader',
-           }]
+        }]
     },
     resolve: {
         extensions: ['.js', '.vue'],
