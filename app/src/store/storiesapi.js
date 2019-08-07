@@ -1,4 +1,4 @@
-const baseURL = `http://localhost:5000/stories`
+const baseURL = process.env.STORIES_API_URL
 
 function fetchStories(count) {
     const url = `${baseURL}?count=${count}`

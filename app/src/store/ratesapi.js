@@ -1,4 +1,4 @@
-const baseURL = `http://localhost:5000/rates`
+const baseURL = process.env.RATES_API_URL
 
 function fetchCurrentRates(base) {
     const url = `${baseURL}/latest_rates/base/${base}`
