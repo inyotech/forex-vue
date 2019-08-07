@@ -37,7 +37,7 @@ export default {
                 day: 'numeric'
             }
             const legend = `Global exchange rates based on the ${base.short_name} ${base.currency_name}, ` +
-                `${(new Date()).toLocaleDateString('default', dateOptions)}`
+                `${(new Date()).toLocaleDateString(undefined, dateOptions)}`
 
             return legend
         },
